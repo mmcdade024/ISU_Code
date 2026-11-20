@@ -1,0 +1,112 @@
+/*
+ * color_sensor.c
+ *
+ *  Created on: Dec 7, 2024
+ *      Author: mamcdade
+ */
+
+#include "color_sensor.h"
+#include "open_interface.h"
+#include "lcd.h"
+#include "timer.h"
+#include "uart.h"
+//#include "music.h"
+
+void getSurfType();
+
+// load_songs();
+
+// Thresholds for surface detection
+volatile int BLACK_THRESHOLD = 500;   // Values  4 are considered black
+volatile int WHITE_THRESHOLD = 2500;  // Values  2740 are considered white
+volatile char* surfaceType;
+
+void getSurfType(oi_t *sensor_data){
+
+    oi_update(sensor_data);
+
+    // Read cliff sensor signals
+    int frontLeftSignal = sensor_data->cliffFrontLeftSignal;
+    int frontRightSignal = sensor_data->cliffFrontRightSignal;
+
+    // Calculate the average of the front left and front right signals
+    int avgSignal = (frontLeftSignal + frontRightSignal) / 2;
+
+    // Determine the surface type
+    if (avgSignal <= BLACK_THRESHOLD) {
+        surfaceType = "Black";
+    } else if (avgSignal >= WHITE_THRESHOLD) {
+        surfaceType = "White";
+    } else {
+        surfaceType = "Normal";
+    }
+
+}
+
+void colorCmd(){
+
+    getSurfType();
+
+    // Movement control
+    char c = uart_receive(); // Receive a command from PuTTY
+    if (strcmp(surfaceType, "White") == 0) {
+
+        // Stop and move backward slightly
+        oi_setWheels(0, 0);  // Stop
+        uart_sendStr("White detected! Moving backward...\n\r");
+        oi_setWheels(-100, -100);  // Move backward
+        timer_waitMillis(500);     // Move for 0.5 seconds
+        oi_setWheels(0, 0);        // Stop again
+
+    } else if (strcmp(surfaceType, "Black") == 0) {
+
+        // Stop and show black detected message
+        oi_setWheels(0, 0);
+        uart_sendStr("Black detected! Stopping robot.\n\r");
+       // oi_play_song(1);
+        timer_waitMillis(3000);   // Wait for the song to finish
+
+    }
+
+    // Movement commands for normal surfaces
+    if (strcmp(surfaceType, "Normal") == 0) {
+        if (c == 'w') {
+            oi_setWheels(100, 100); // Move forward slightly
+            timer_waitMillis(500); // Move for 0.5 seconds
+            oi_setWheels(0, 0);    // Stop
+            uart_sendStr("Moving forward.\n\r");
+        } else if (c == 's') {
+            oi_setWheels(-100, -100); // Move backward slightly
+            timer_waitMillis(500);   // Move for 0.5 seconds
+            oi_setWheels(0, 0);      // Stop
+            uart_sendStr("Moving backward.\n\r");
+        } else if (c == 'a') {
+            oi_setWheels(100, -100); // Turn left slightly
+            timer_waitMillis(500);  // Turn for 0.5 seconds
+            oi_setWheels(0, 0);     // Stop
+            uart_sendStr("Turning left.\n\r");
+        } else if (c == 'd') {
+            oi_setWheels(-100, 100); // Turn right slightly
+            timer_waitMillis(500);  // Turn for 0.5 seconds
+            oi_setWheels(0, 0);     // Stop
+            uart_sendStr("Turning right.\n\r");
+        } else if (c == 'p') {
+            uart_sendStr("Exiting program.\n\r");
+            break; // Exit the program
+        }
+    }
+
+    // Print the surface type and average signal to UART for debugging
+    char buffer[100];
+    sprintf(buffer, "Avg Signal=%d, Surface=%s\n\r", avgSignal, surfaceType);
+    uart_sendStr(buffer);
+
+    // Add a small delay for stability
+    timer_waitMillis(100);
+
+}
+
+void sendSurfType(){ uart_sendStr(surfaceType); }
+
+char *getSurfaceType(){ return surfaceType; }
+

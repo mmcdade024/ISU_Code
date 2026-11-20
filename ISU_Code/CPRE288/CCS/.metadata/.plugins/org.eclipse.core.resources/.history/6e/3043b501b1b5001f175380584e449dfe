@@ -1,0 +1,37 @@
+/**
+ * main.c
+ */
+
+#include <inc/tm4c123gh6pm.h>
+#include "open_interface.h"
+#include "color_sensor.h"
+#include "Timer.h"
+#include "servo.h"
+#include "uart.h"
+#include "ping.h"
+#include "scan.h"
+#include "lcd.h"
+#include "adc.h"
+
+void keyMove(char keyPressed, oi_t *sensor_data);
+
+void main(void)
+{
+    timer_init();
+    servo_init();
+    adc_init();
+    lcd_init();
+    uart_init();
+
+    oi_t *sensor_data = oi_alloc();
+    oi_init(sensor_data);
+
+    while(1){
+
+        key_pressed = uart_receive();
+
+        keyMove(key_pressed, sensor_data);
+
+    }
+
+}

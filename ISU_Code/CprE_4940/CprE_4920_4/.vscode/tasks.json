@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build SFML Project",
+            "command": "C:\\School\\ISU\\CPRE\\CprE_4920_01\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\*.cpp", 
+                "-o",
+                "${workspaceFolder}\\SaltBot_Navigation_Sim.exe",
+                "-I", "${workspaceFolder}/SFML-3.0.2/include",
+                "-L", "${workspaceFolder}/SFML-3.0.2/lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Custom build task for SFML with local MinGW"
+        }
+    ]
+}

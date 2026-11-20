@@ -1,0 +1,68 @@
+|counter_mod
+A <= seven_seg_decoder:inst2.A
+Clock => inst19.CLK
+Clock => inst9.CLK
+Clock => inst13.CLK
+W => inst10.IN0
+W => inst30.IN0
+W => inst17.IN0
+W => inst25.IN0
+B <= seven_seg_decoder:inst2.B
+C <= seven_seg_decoder:inst2.C
+D <= seven_seg_decoder:inst2.D
+E <= seven_seg_decoder:inst2.E
+F <= seven_seg_decoder:inst2.F
+G <= seven_seg_decoder:inst2.G
+
+
+|counter_mod|seven_seg_decoder:inst2
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+X_3 => A.IN0
+X_3 => A.IN0
+X_3 => B.IN0
+X_3 => A.IN0
+X_3 => A.IN0
+X_3 => E.IN0
+X_3 => F.IN0
+X_2 => A.IN1
+X_2 => A.IN1
+X_2 => B.IN0
+X_2 => A.IN1
+X_2 => A.IN1
+X_2 => E.IN0
+X_1 => A.IN1
+X_1 => B.IN1
+X_1 => B.IN1
+X_1 => C.IN1
+X_1 => C.IN1
+X_1 => F.IN1
+X_1 => G.IN1
+X_1 => A.IN1
+X_1 => A.IN1
+X_1 => A.IN1
+X_1 => E.IN1
+X_0 => A.IN1
+X_0 => A.IN1
+X_0 => A.IN1
+X_0 => B.IN1
+X_0 => B.IN1
+X_0 => D.IN1
+X_0 => E.IN1
+X_0 => E.IN1
+X_0 => F.IN1
+X_0 => F.IN1
+X_0 => G.IN1
+X_0 => A.IN1
+X_0 => B.IN1
+X_0 => B.IN1
+X_0 => C.IN1
+X_0 => D.IN1
+X_0 => G.IN1
+
+

@@ -1,0 +1,16 @@
+# Compile of lab10step1.v was successful.
+vsim -gui work.lab10step1
+# vsim -gui work.lab10step1 
+# Start time: 18:25:38 on Apr 09,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.lab10step1(fast)
+add wave -position insertpoint  \
+sim:/lab10step1/IN \
+sim:/lab10step1/CLK \
+sim:/lab10step1/Q1 \
+sim:/lab10step1/Q2 \
+sim:/lab10step1/Q3 \
+sim:/lab10step1/Q4
+do lab10step1.do
+# End time: 19:59:28 on Apr 09,2024, Elapsed time: 1:33:50
+# Errors: 0, Warnings: 5

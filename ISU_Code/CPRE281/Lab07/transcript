@@ -1,0 +1,228 @@
+# Compile of adder_sub.v was successful.
+# Compile of adder_4bit.v was successful.
+# Compile of FA.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.adder_sub
+# vsim -gui work.adder_sub 
+# Start time: 14:09:36 on Mar 20,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.adder_sub(fast)
+add wave -position insertpoint  \
+sim:/adder_sub/X3 \
+sim:/adder_sub/Controle \
+sim:/adder_sub/Y3 \
+sim:/adder_sub/X2 \
+sim:/adder_sub/Y2 \
+sim:/adder_sub/X1 \
+sim:/adder_sub/Y1 \
+sim:/adder_sub/X0 \
+sim:/adder_sub/Y0 \
+sim:/adder_sub/Overflow \
+sim:/adder_sub/Cout \
+sim:/adder_sub/S3 \
+sim:/adder_sub/S2 \
+sim:/adder_sub/S1 \
+sim:/adder_sub/S0
+force Control 0 0, 1 200 -repeat 1600
+# ** UI-Msg (Error) (suppressible): (vsim-4008) Object 'Control' not found.
+# 
+force Y0 0 0, 1 200 -repeat 1400
+force X0 0 0, 1 100 -repeat 1200
+force Y1 0 0, 1 200 -repeat 1000
+force X1 0 0, 1 100 -repeat 800
+force Y2 0 0, 1 50 -repeat 600
+force X2 0 0, 1 200 -repeat 400
+force Y3 0 0, 1 100 -repeat 200
+force X3 0 0, 1 50 -repeat 100
+run 1900
+quit -sim
+# End time: 14:11:41 on Mar 20,2024, Elapsed time: 0:02:05
+# Errors: 0, Warnings: 8
+vsim work.adder_sub
+# vsim work.adder_sub 
+# Start time: 14:11:48 on Mar 20,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.adder_sub(fast)
+add wave -position insertpoint  \
+sim:/adder_sub/X3 \
+sim:/adder_sub/Controle \
+sim:/adder_sub/Y3 \
+sim:/adder_sub/X2 \
+sim:/adder_sub/Y2 \
+sim:/adder_sub/X1 \
+sim:/adder_sub/Y1 \
+sim:/adder_sub/X0 \
+sim:/adder_sub/Y0 \
+sim:/adder_sub/Overflow \
+sim:/adder_sub/Cout \
+sim:/adder_sub/S3 \
+sim:/adder_sub/S2 \
+sim:/adder_sub/S1 \
+sim:/adder_sub/S0
+force Controle 0 0, 1 200 -repeat 1600
+force Y0 0 0, 1 200 -repeat 1400
+force X0 0 0, 1 100 -repeat 1200
+force Y1 0 0, 1 200 -repeat 1000
+force X1 0 0, 1 100 -repeat 800
+force Y2 0 0, 1 50 -repeat 600
+force X2 0 0, 1 200 -repeat 400
+force Y3 0 0, 1 100 -repeat 200
+force X3 0 0, 1 50 -repeat 100
+run 1900
+quit -sim
+# End time: 14:16:06 on Mar 20,2024, Elapsed time: 0:04:18
+# Errors: 0, Warnings: 1
+vsim work.adder_sub
+# vsim work.adder_sub 
+# Start time: 14:16:07 on Mar 20,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.adder_sub(fast)
+add wave -position insertpoint  \
+sim:/adder_sub/X3 \
+sim:/adder_sub/Controle \
+sim:/adder_sub/Y3 \
+sim:/adder_sub/X2 \
+sim:/adder_sub/Y2 \
+sim:/adder_sub/X1 \
+sim:/adder_sub/Y1 \
+sim:/adder_sub/X0 \
+sim:/adder_sub/Y0 \
+sim:/adder_sub/Overflow \
+sim:/adder_sub/Cout \
+sim:/adder_sub/S3 \
+sim:/adder_sub/S2 \
+sim:/adder_sub/S1 \
+sim:/adder_sub/S0
+
+force X3 1
+force X2 0
+force X1 1
+force X0 1
+force Controle 1
+force Y3 0
+force Y2 1
+force Y1 1
+force Y0 0
+
+run 100
+force X3 1
+force X2 0
+force X1 0
+force X0 1
+force Controle 1
+force Y3 0
+force Y2 0
+force Y1 1
+force Y0 0
+
+run 100
+force X3 0
+force X2 0
+force X1 0
+force X0 1
+force Controle 1
+force Y3 0
+force Y2 1
+force Y1 1
+force Y0 1
+
+run 100
+quit -sim
+# End time: 14:21:17 on Mar 20,2024, Elapsed time: 0:05:10
+# Errors: 0, Warnings: 1
+vsim work.adder_sub
+# vsim work.adder_sub 
+# Start time: 14:21:24 on Mar 20,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.adder_sub(fast)
+add wave -position insertpoint  \
+sim:/adder_sub/X3 \
+sim:/adder_sub/Controle \
+sim:/adder_sub/Y3 \
+sim:/adder_sub/X2 \
+sim:/adder_sub/Y2 \
+sim:/adder_sub/X1 \
+sim:/adder_sub/Y1 \
+sim:/adder_sub/X0 \
+sim:/adder_sub/Y0 \
+sim:/adder_sub/Overflow \
+sim:/adder_sub/Cout \
+sim:/adder_sub/S3 \
+sim:/adder_sub/S2 \
+sim:/adder_sub/S1 \
+sim:/adder_sub/S0
+force X3 1
+force X2 0
+force X1 1
+force X0 1
+force Controle 1
+force Y3 0
+force Y2 1
+force Y1 1
+force Y0 0
+
+run 100
+
+force X3 1
+force X2 0
+force X1 0
+force X0 1
+force Controle 1
+force Y3 0
+force Y2 0
+force Y1 1
+force Y0 0
+
+run 100
+
+force X3 0
+force X2 0
+force X1 0
+force X0 1
+force Controle 0
+force Y3 0
+force Y2 1
+force Y1 1
+force Y0 1
+
+run 100
+
+force X3 1
+force X2 1
+force X1 0
+force X0 0
+force Controle 0
+force Y3 0
+force Y2 1
+force Y1 1
+force Y0 0
+
+run 100
+
+
+force X3 0
+force X2 0
+force X1 1
+force X0 1
+force Controle 1
+force Y3 1
+force Y2 1
+force Y1 0
+force Y0 1
+
+run 100
+
+force X3 0
+force X2 1
+force X1 0
+force X0 1
+force Controle 0
+force Y3 1
+force Y2 0
+force Y1 1
+force Y0 1
+
+run 100
+
+# End time: 14:40:44 on Mar 20,2024, Elapsed time: 0:19:20
+# Errors: 0, Warnings: 1

@@ -1,0 +1,14 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+activeLaunchTarget=null\:---
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:lab_1,org.eclipse.launchbar.core.descriptorType.default\:lab_2,org.eclipse.launchbar.core.descriptorType.default\:lab_3,org.eclipse.launchbar.core.descriptorType.default\:lab_4,org.eclipse.launchbar.core.descriptorType.default\:lab_5,org.eclipse.launchbar.core.descriptorType.default\:lab_6,org.eclipse.launchbar.core.descriptorType.default\:lab_8,org.eclipse.launchbar.core.descriptorType.default\:lab_10,org.eclipse.launchbar.core.descriptorType.default\:lab_9,org.eclipse.launchbar.core.descriptorType.default\:lab_7,org.eclipse.launchbar.core.descriptorType.default\:Final
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Final/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Final/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:lab_1/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:lab_1/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:lab_2/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:lab_2/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:lab_3/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:lab_8/activeLaunchMode=debug

@@ -1,0 +1,273 @@
+/**
+ * lab6_template_extra_help.c
+ *
+ * Description: This is file is meant for those that would like a little
+ *              extra help with formatting their code.
+ *
+ */
+
+#define _RESET 0
+#define _PART1 0
+#define _PART2 0
+#define _PART3 0
+#define _PART4 1
+
+#include <math.h>
+#include <stdio.h>
+#include "timer.h"
+#include "lcd.h"
+#include "uart.h"
+#include "cyBot_Scan.h"
+#include "open_interface.h"
+
+
+char singleNumChar(int num);
+void numToChar(int num);
+
+
+#if _RESET
+#include "Simulation_User Files_resetSimulation.h"
+#endif
+
+volatile  char uart_data;  // Your UART interupt code can place read data here
+volatile  char flag;       // Your UART interupt can update this flag
+                           // to indicate that it has placed new data
+                           // in uart_data
+
+
+
+void main(){
+#if _RESET
+    resetSimulationBoard();
+#else
+
+    timer_init();
+    lcd_init();
+    uart_init();
+
+#if _PART1      // Receive and display text
+
+
+    int count = 1;
+
+    while(1){
+
+        char key = uart_receive();
+
+        if (count <= 20 && key != '\r'){
+            lcd_putc(key);
+            count ++;
+        } else {
+            lcd_clear();
+            count = 1;
+        }
+
+    }
+
+
+#endif
+
+#if _PART2      // Echo Received Character
+
+    while(1){
+
+        char key = uart_receive();
+
+        if (key == '\r'){
+            uart_sendChar('\n');
+        } else {
+            uart_sendChar(key);
+        }
+
+    }
+
+
+#endif
+
+#if _PART3 // Receive and send characters using interrupts.
+
+    uart_interrupt_init();
+
+    int count = 1;
+    int pressed = 0;
+
+    while(1){
+
+        if (key_pressed != 0){
+            pressed = 1;
+        } else {
+            pressed = 0;
+        }
+
+        if(key_event && pressed != 0){
+            if (count <= 20 && key_pressed != '\r'){
+                lcd_putc(key_pressed);
+                key_pressed = 0;
+                count ++;
+            } else {
+                lcd_clear();
+                count = 1;
+            }
+        }
+
+    }
+
+#endif
+
+#if _PART4 // IR sensor and moving roomba
+
+
+    cyBOT_init_Scan(0b0111);
+    uart_interrupt_init();
+    oi_t *sensor_data = oi_alloc();
+    oi_init(sensor_data);
+
+    /**
+    cyBOT_SERVRO_cal_t cal = cyBOT_SERVO_cal();
+
+    left_calibration_value  = cal.left;
+    right_calibration_value = cal.right;
+
+    **/
+
+    left_calibration_value  = 1251250;
+
+    right_calibration_value = 274750;
+
+    cyBOT_Scan_t Scan;
+
+    int i = 0;
+
+    while(1){
+
+        oi_update(sensor_data);
+
+        if(key_pressed == 'm'){
+
+            typedef struct{
+                int degree;
+                int distance;
+                int width;
+            }Object;
+
+            Object objList[20] = {0, 0, 0};
+
+            int PingData[91];
+            int IrData[91];
+
+            for (i = 0; i <= 90; i ++){
+
+                cyBOT_Scan(i, &Scan);
+
+                uart_sendStr("Angle: ");
+                numToChar(i*2);
+
+                uart_sendStr(" PING: ");
+                numToChar(Scan.sound_dist);
+                PingData[i] = Scan.sound_dist;
+
+                uart_sendStr(" IR: ");
+                numToChar(Scan.IR_raw_val);
+                //IrData[i] = Scan.IR_raw_val;
+
+                uart_sendStr("\n\r");
+
+             }
+
+        }
+
+        if (key_pressed == 'w'){
+            oi_setWheels(200, 200);
+
+        }else if (key_pressed == 's'){
+            oi_setWheels(-200, -200);
+
+        }else if (key_pressed == 'a'){
+            oi_setWheels(100, -100);
+
+        }else if (key_pressed == 'd'){
+            oi_setWheels(-100, 100);
+
+        } else {
+            oi_setWheels(0, 0);
+        }
+
+        if (key_pressed == 'q'){
+
+            oi_setWheels(0, 0);
+            oi_free(sensor_data);
+
+            return;
+        }
+
+
+        key_pressed = 0;
+
+    }
+
+
+#endif
+
+
+
+#endif
+}
+
+
+char singleNumChar(int num){
+
+    switch(num){
+        case 1:
+            return '1';
+        case 2:
+            return '2';
+        case 3:
+            return '3';
+        case 4:
+            return '4';
+        case 5:
+            return '5';
+        case 6:
+            return '6';
+        case 7:
+            return '7';
+        case 8:
+            return '8';
+        case 9:
+            return '9';
+        default:
+            return '0';
+    }
+
+}
+
+void numToChar(int num){
+
+    if (num < 10){ uart_sendChar(singleNumChar(num)); return;}
+
+    int save = num;
+    int toSend = 0;
+    int numOfDig = 0;
+
+    int i = 0;
+
+    while(save > 0){
+
+       save /= 10;
+       numOfDig ++;
+
+    }
+
+    save = num;
+
+    for (i = numOfDig-1; i >= 0; i--){
+
+       toSend = save / pow(10, i);
+       save -= toSend * pow(10, i);
+
+       uart_sendChar(singleNumChar(toSend));
+
+    }
+
+}
+

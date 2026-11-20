@@ -1,0 +1,189 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Cout",
+					"strict" : false
+				},
+				{
+					"name" : "A-IN1",
+					"strict" : false
+				},
+				{
+					"name" : "B-IN1",
+					"strict" : false
+				},
+				{
+					"name" : "C-IN1",
+					"strict" : false
+				},
+				{
+					"name" : "D-IN1",
+					"strict" : false
+				},
+				{
+					"name" : "E-IN1",
+					"strict" : false
+				},
+				{
+					"name" : "F-IN1",
+					"strict" : false
+				},
+				{
+					"name" : "G-IN1",
+					"strict" : false
+				},
+				{
+					"name" : "A-IN0",
+					"strict" : false
+				},
+				{
+					"name" : "B-IN0",
+					"strict" : false
+				},
+				{
+					"name" : "C-IN0",
+					"strict" : false
+				},
+				{
+					"name" : "D-IN0",
+					"strict" : false
+				},
+				{
+					"name" : "E-IN0",
+					"strict" : false
+				},
+				{
+					"name" : "F-IN0",
+					"strict" : false
+				},
+				{
+					"name" : "G-IN0",
+					"strict" : false
+				},
+				{
+					"name" : "A-OUT0",
+					"strict" : false
+				},
+				{
+					"name" : "B-OUT0",
+					"strict" : false
+				},
+				{
+					"name" : "C-OUT0",
+					"strict" : false
+				},
+				{
+					"name" : "D-OUT0",
+					"strict" : false
+				},
+				{
+					"name" : "E-OUT0",
+					"strict" : false
+				},
+				{
+					"name" : "F-OUT0",
+					"strict" : false
+				},
+				{
+					"name" : "G-OUT0",
+					"strict" : false
+				},
+				{
+					"name" : "Overflow",
+					"strict" : false
+				},
+				{
+					"name" : "out0",
+					"strict" : false
+				},
+				{
+					"name" : "out1",
+					"strict" : false
+				},
+				{
+					"name" : "out2",
+					"strict" : false
+				},
+				{
+					"name" : "out3",
+					"strict" : false
+				},
+				{
+					"name" : "Y3",
+					"strict" : false
+				},
+				{
+					"name" : "X3",
+					"strict" : false
+				},
+				{
+					"name" : "Y2",
+					"strict" : false
+				},
+				{
+					"name" : "X2",
+					"strict" : false
+				},
+				{
+					"name" : "X0",
+					"strict" : false
+				},
+				{
+					"name" : "Y0",
+					"strict" : false
+				},
+				{
+					"name" : "X1",
+					"strict" : false
+				},
+				{
+					"name" : "Y1",
+					"strict" : false
+				},
+				{
+					"name" : "S1",
+					"strict" : false
+				},
+				{
+					"name" : "S0",
+					"strict" : false
+				},
+				{
+					"name" : "w",
+					"strict" : false
+				},
+				{
+					"name" : "Load",
+					"strict" : false
+				},
+				{
+					"name" : "Clock1",
+					"strict" : false
+				},
+				{
+					"name" : "R_in2",
+					"strict" : false
+				},
+				{
+					"name" : "R_in1",
+					"strict" : false
+				},
+				{
+					"name" : "R_in0",
+					"strict" : false
+				},
+				{
+					"name" : "R_in3",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,14 @@
+
+/**
+ * main.c
+ */
+
+#include "ping.h"
+
+void main(void)
+{
+
+    ping_init();
+
+
+}

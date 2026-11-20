@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Apr 23 21:21:06 2024
+Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Standard Edition
+Revision Name : Counter_0l
+Top-level Entity Name : Counter_0l
+Family : Cyclone IV E
+Total logic elements : 38
+    Total combinational functions : 38
+    Dedicated logic registers : 27
+Total registers : 27
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

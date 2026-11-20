@@ -1,0 +1,73 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11f vlog 2023.2 2023.04, Apr 11 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/questasim64_2023.2/examples
+T_opt
+!s110 1712003537
+VJ20HeY?>V]A7=Wn?0eLfP0
+04 7 4 work shifter fast 0
+=1-b07b252c6b48-660b19d0-3d8-2b48
+R1
+!s12b OEM100
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2023.2;77
+vmux2to1
+2U:/CPRE281/Lab08/mux2to1.v
+Z3 !s110 1712003293
+!i10b 1
+!s100 g0lRE1>SZf?8EkbHYSD0<2
+IZdhD1`^6>8RYGK:h46ZlY0
+Z4 dU:/CPRE281/Lab08
+w1711999068
+8U:/CPRE281/Lab08/mux2to1.v
+FU:/CPRE281/Lab08/mux2to1.v
+!i122 3
+L0 1 8
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2023.2;77
+r1
+!s85 0
+31
+!s108 1712003291.000000
+!s107 U:/CPRE281/Lab08/mux2to1.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|U:/CPRE281/Lab08/mux2to1.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vshifter
+2U:/CPRE281/Lab08/shifter.v
+R3
+!i10b 1
+!s100 GU>Ie86eOok^A1S@V_HGk3
+ID4DT5Uej3g5H7QEZ_7_8I1
+R4
+w1712003201
+8U:/CPRE281/Lab08/shifter.v
+FU:/CPRE281/Lab08/shifter.v
+!i122 4
+L0 20 67
+R5
+R6
+r1
+!s85 0
+31
+!s108 1712003293.000000
+!s107 U:/CPRE281/Lab08/shifter.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|U:/CPRE281/Lab08/shifter.v|
+!i113 0
+R7
+R2

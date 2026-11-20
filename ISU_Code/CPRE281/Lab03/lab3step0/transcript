@@ -1,0 +1,17 @@
+# Compile of lab3step1.v was successful.
+vsim -gui work.lab3step1
+# vsim -gui work.lab3step1 
+# Start time: 21:19:10 on Feb 06,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.lab3step1(fast)
+add wave -position insertpoint  \
+sim:/lab3step1/C \
+sim:/lab3step1/G \
+sim:/lab3step1/W \
+sim:/lab3step1/A
+force C 0 0, 1 200 -repeat 400
+force G 0 0, 1 100 -repeat 200
+force W 0 0, 1 50 -repeat 100
+run 400
+# End time: 21:20:31 on Feb 06,2024, Elapsed time: 0:01:21
+# Errors: 0, Warnings: 7

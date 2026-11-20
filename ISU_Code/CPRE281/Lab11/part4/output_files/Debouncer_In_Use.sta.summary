@@ -1,0 +1,185 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup '50Mhz_Clock'
+Slack : -2.344
+TNS   : -7.123
+
+Type  : Slow 1200mV 85C Model Setup 'Debouncer_Circuit:inst|clock_divider_1024:inst12|inst10'
+Slack : -2.322
+TNS   : -6.605
+
+Type  : Slow 1200mV 85C Model Setup 'Debouncer_Circuit:inst|clock_divider_1024:inst1|inst10'
+Slack : -1.020
+TNS   : -1.020
+
+Type  : Slow 1200mV 85C Model Setup 'Debouncer_Circuit:inst|inst2'
+Slack : 0.070
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'Manual_Clock'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold '50Mhz_Clock'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Debouncer_Circuit:inst|clock_divider_1024:inst12|inst10'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Debouncer_Circuit:inst|inst2'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Manual_Clock'
+Slack : 0.437
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Debouncer_Circuit:inst|clock_divider_1024:inst1|inst10'
+Slack : 1.153
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width '50Mhz_Clock'
+Slack : -3.000
+TNS   : -15.850
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Manual_Clock'
+Slack : -3.000
+TNS   : -5.570
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Debouncer_Circuit:inst|clock_divider_1024:inst12|inst10'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Debouncer_Circuit:inst|inst2'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Debouncer_Circuit:inst|clock_divider_1024:inst1|inst10'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Setup '50Mhz_Clock'
+Slack : -2.073
+TNS   : -5.640
+
+Type  : Slow 1200mV 0C Model Setup 'Debouncer_Circuit:inst|clock_divider_1024:inst12|inst10'
+Slack : -2.047
+TNS   : -5.142
+
+Type  : Slow 1200mV 0C Model Setup 'Debouncer_Circuit:inst|clock_divider_1024:inst1|inst10'
+Slack : -0.868
+TNS   : -0.868
+
+Type  : Slow 1200mV 0C Model Setup 'Debouncer_Circuit:inst|inst2'
+Slack : 0.159
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Manual_Clock'
+Slack : 0.251
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold '50Mhz_Clock'
+Slack : 0.352
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Debouncer_Circuit:inst|clock_divider_1024:inst12|inst10'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Debouncer_Circuit:inst|inst2'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Manual_Clock'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Debouncer_Circuit:inst|clock_divider_1024:inst1|inst10'
+Slack : 1.122
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width '50Mhz_Clock'
+Slack : -3.000
+TNS   : -15.850
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Manual_Clock'
+Slack : -3.000
+TNS   : -5.570
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Debouncer_Circuit:inst|clock_divider_1024:inst12|inst10'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Debouncer_Circuit:inst|inst2'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Debouncer_Circuit:inst|clock_divider_1024:inst1|inst10'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Fast 1200mV 0C Model Setup '50Mhz_Clock'
+Slack : -0.627
+TNS   : -0.647
+
+Type  : Fast 1200mV 0C Model Setup 'Debouncer_Circuit:inst|clock_divider_1024:inst12|inst10'
+Slack : -0.620
+TNS   : -0.620
+
+Type  : Fast 1200mV 0C Model Setup 'Debouncer_Circuit:inst|clock_divider_1024:inst1|inst10'
+Slack : -0.600
+TNS   : -0.600
+
+Type  : Fast 1200mV 0C Model Setup 'Debouncer_Circuit:inst|inst2'
+Slack : 0.546
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Manual_Clock'
+Slack : 0.606
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold '50Mhz_Clock'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Debouncer_Circuit:inst|clock_divider_1024:inst12|inst10'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Debouncer_Circuit:inst|inst2'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Manual_Clock'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Debouncer_Circuit:inst|clock_divider_1024:inst1|inst10'
+Slack : 0.472
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width '50Mhz_Clock'
+Slack : -3.000
+TNS   : -13.600
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Manual_Clock'
+Slack : -3.000
+TNS   : -5.175
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Debouncer_Circuit:inst|clock_divider_1024:inst12|inst10'
+Slack : -1.000
+TNS   : -10.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Debouncer_Circuit:inst|inst2'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Debouncer_Circuit:inst|clock_divider_1024:inst1|inst10'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

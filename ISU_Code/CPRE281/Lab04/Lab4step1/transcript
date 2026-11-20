@@ -1,0 +1,19 @@
+# Compile of lab4step1.v was successful.
+vsim -gui work.lab4step1
+# vsim -gui work.lab4step1 
+# Start time: 18:11:03 on Feb 13,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.lab4step1(fast)
+add wave -position insertpoint  \
+sim:/lab4step1/F \
+sim:/lab4step1/C \
+sim:/lab4step1/G \
+sim:/lab4step1/W \
+sim:/lab4step1/A
+force F 0 0, 1 400 -repeat 800
+force C 0 0, 1 200 -repeat 400
+force G 0 0, 1 100 -repeat 200
+force W 0 0, 1 50 -repeat 100
+run 800
+# End time: 18:47:05 on Feb 13,2024, Elapsed time: 0:36:02
+# Errors: 0, Warnings: 5

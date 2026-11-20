@@ -1,0 +1,21 @@
+/*
+ * ping.c
+ *
+ *  Created on: Nov 5, 2024
+ *      Author: mamcdade
+ */
+
+#include "ping.h"
+
+void ping_init(void){
+
+    // sets the clock for port B
+    SYSCTL_RCGCGPIO_R |= 0b10;
+    //timer_waitMillis(500);
+
+    // sets the direction of port B(3) to be output
+    // then enables them to be used
+    GPIO_PORTB_DIR_R |= 0b00000100;
+    GPIO_PORTB_DEN_R |= 0b00000100;
+
+}

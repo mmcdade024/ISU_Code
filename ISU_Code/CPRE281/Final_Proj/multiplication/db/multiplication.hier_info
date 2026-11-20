@@ -1,0 +1,108 @@
+|multiplication
+P0 <= inst346.DB_MAX_OUTPUT_PORT_TYPE
+B0 => inst346.IN0
+B0 => inst11.IN0
+B0 => inst.IN0
+A0 => inst346.IN1
+A0 => inst15.IN1
+A0 => inst12.IN1
+P1 <= Half_adder:inst85.Sum
+A1 => inst11.IN1
+A1 => inst14.IN1
+A1 => inst13.IN1
+B1 => inst15.IN0
+B1 => inst14.IN0
+B1 => inst18.IN0
+P2 <= Half_adder:inst20.Sum
+B2 => inst12.IN0
+B2 => inst13.IN0
+B2 => inst23.IN0
+A2 => inst.IN1
+A2 => inst18.IN1
+A2 => inst23.IN1
+P3 <= Half_adder:inst21.Sum
+P4 <= Half_adder:inst22.Sum
+P5 <= Half_adder:inst22.Carry
+
+
+|multiplication|Half_adder:inst85
+Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst10.IN1
+b => inst.IN1
+b => inst10.IN0
+Carry <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplication|Half_adder:inst20
+Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst10.IN1
+b => inst.IN1
+b => inst10.IN0
+Carry <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplication|Half_adder:inst17
+Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst10.IN1
+b => inst.IN1
+b => inst10.IN0
+Carry <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplication|Half_adder:inst16
+Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst10.IN1
+b => inst.IN1
+b => inst10.IN0
+Carry <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplication|Half_adder:inst21
+Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst10.IN1
+b => inst.IN1
+b => inst10.IN0
+Carry <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplication|Half_adder:inst456
+Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst10.IN1
+b => inst.IN1
+b => inst10.IN0
+Carry <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplication|Half_adder:inst19
+Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst10.IN1
+b => inst.IN1
+b => inst10.IN0
+Carry <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplication|Half_adder:inst22
+Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst10.IN1
+b => inst.IN1
+b => inst10.IN0
+Carry <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplication|Half_adder:inst4567
+Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst10.IN1
+b => inst.IN1
+b => inst10.IN0
+Carry <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,15 @@
+U:/CPRE281/mProj/Bobs_Circit/Bobs_Circit.v {1 {vlog -work work -vopt -stats=none U:/CPRE281/mProj/Bobs_Circit/Bobs_Circit.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module Bobs_Circit
+
+Top level modules:
+	Bobs_Circit
+
+} {} {}} U:/CPRE281/mProj/Bobs_Circit/Block1.v {1 {vlog -work work -vopt -stats=none U:/CPRE281/mProj/Bobs_Circit/Block1.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module Block1
+
+Top level modules:
+	Block1
+
+} {} {}}

@@ -1,0 +1,90 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+Z1 !s12c _opt
+R0
+!s11f vlog 2023.2 2023.04, Apr 11 2023
+R1
+R0
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dC:/questasim64_2023.2/examples
+T_opt
+!s110 1709067608
+VIT]ddTR1o8T87SQ7hGBKJ2
+04 11 4 work Bob_Correct fast 0
+=1-7486e228a15d-65de4d58-1ed-2c6c
+R0
+Z3 !s12b OEM100
+Z4 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2023.2;77
+R2
+T_opt1
+!s110 1709070358
+V;6APc][6`;SND[Wh1nhMF3
+04 9 4 work Bob_block fast 0
+=1-7486e228a15d-65de5816-1c9-310
+R0
+R3
+R4
+o-quiet -auto_acc_if_foreign -work work
+R5
+n@_opt1
+R6
+vBob_block
+2U:/CPRE281/mProj/Bob_Correct/Bob_block.v
+Z7 !s110 1709070337
+!i10b 1
+!s100 HaWY@nGE[RA78;>OgWXWU3
+ISU[HKIR3@5:N^H_hU:=T73
+Z8 dU:/CPRE281/mProj/Bob_Correct
+w1709070240
+8U:/CPRE281/mProj/Bob_Correct/Bob_block.v
+FU:/CPRE281/mProj/Bob_Correct/Bob_block.v
+!i122 2
+L0 20 29
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2023.2;77
+r1
+!s85 0
+31
+Z11 !s108 1709070337.000000
+!s107 U:/CPRE281/mProj/Bob_Correct/Bob_block.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|U:/CPRE281/mProj/Bob_Correct/Bob_block.v|
+!i113 0
+Z12 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+n@bob_block
+vBob_Correct
+2U:/CPRE281/mProj/Bob_Correct/Bob_Correct.v
+R7
+!i10b 1
+!s100 iWOmN<nj;FaTjY7Z=IkR^1
+IgNZWd<mQe:J?NBI5lKFd<1
+R8
+w1709067521
+8U:/CPRE281/mProj/Bob_Correct/Bob_Correct.v
+FU:/CPRE281/mProj/Bob_Correct/Bob_Correct.v
+!i122 3
+L0 1 8
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 U:/CPRE281/mProj/Bob_Correct/Bob_Correct.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|U:/CPRE281/mProj/Bob_Correct/Bob_Correct.v|
+!i113 0
+R12
+R5
+n@bob_@correct

@@ -1,0 +1,18 @@
+/*
+ * color_sensor.h
+ *
+ *  Created on: Dec 7, 2024
+ *      Author: mamcdade
+ */
+
+#include "open_interface.h"
+
+#ifndef COLOR_SENSOR_H_
+#define COLOR_SENSOR_H_
+
+char *getSurfaceType();
+void getSurfType(oi_t *sensor_data);
+void sendSurfType();
+void colorCmd(oi_t *sensor_data);
+
+#endif /* COLOR_SENSOR_H_ */

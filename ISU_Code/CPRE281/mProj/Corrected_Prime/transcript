@@ -1,0 +1,19 @@
+# Compile of Corrected_Prime.v was successful.
+vsim -gui work.corrected_Prime
+# vsim -gui work.corrected_Prime 
+# Start time: 18:38:53 on Feb 27,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.corrected_Prime(fast)
+add wave -position insertpoint  \
+sim:/corrected_Prime/P \
+sim:/corrected_Prime/W \
+sim:/corrected_Prime/X \
+sim:/corrected_Prime/Y \
+sim:/corrected_Prime/Z
+force W 0 0, 1 400 -repeat 800
+force X 0 0, 1 200 -repeat 400
+force Y 0 0, 1 100 -repeat 200
+force Z 0 0, 1 50 -repeat 100
+run 800
+# End time: 18:53:38 on Feb 27,2024, Elapsed time: 0:14:45
+# Errors: 0, Warnings: 5

@@ -1,0 +1,52 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11f vlog 2023.2 2023.04, Apr 11 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dC:/questasim64_2023.2/examples
+T_opt
+!s110 1709060184
+VL]Rka1X6<5eHcf7@6H1oJ1
+04 15 4 work corrected_Prime fast 0
+=1-7486e228a2b9-65de3057-38d-ce0
+R1
+!s12b OEM100
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2023.2;77
+R2
+vcorrected_Prime
+2U:/CPRE281/mProj/Corrected_Prime/Corrected_Prime.v
+!s110 1709080717
+!i10b 1
+!s100 WiXh<i3WRdLVg:_JQ8L=k2
+I4Mk1jlH9EIVmzPQz^IYe?3
+dU:/CPRE281/mProj/Corrected_Prime
+w1709060054
+8U:/CPRE281/mProj/Corrected_Prime/Corrected_Prime.v
+FU:/CPRE281/mProj/Corrected_Prime/Corrected_Prime.v
+!i122 3
+L0 1 8
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2023.2;77
+r1
+!s85 0
+31
+!s108 1709080717.000000
+!s107 U:/CPRE281/mProj/Corrected_Prime/Corrected_Prime.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|U:/CPRE281/mProj/Corrected_Prime/Corrected_Prime.v|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+ncorrected_@prime

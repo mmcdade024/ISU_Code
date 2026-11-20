@@ -1,0 +1,9 @@
+module seven_seg_decoder (A,B,C,D,E,F,G,X_3,X_2,X_1,X_0);
+
+	input X_3,X_2,X_1,X_0;
+	output A,B,C,D,E,F,G;
+	
+	assign A = (~A & ~B & ~C & D) | (~A & B & ~C & ~D) | (A & ~B & C & D) | (A & B & ~C & D);
+	
+	assign B = (~A & ~B & ~C & D) | (~A & B & ~C & ~D) | (A & ~B & C & D) | (A & B & ~C & D);
+	

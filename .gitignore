@@ -1,0 +1,12 @@
+# Local compiler and third-party libraries
+mingw64/
+SFML-3.0.2/
+
+# Python virtual environment
+.venv/
+
+# Compiled binaries, object files, and DLLs
+*.exe
+*.o
+*.dll
+ISU_Code/CprE_381/_temp_matlab_R2024b_Windows/

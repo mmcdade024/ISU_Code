@@ -1,0 +1,50 @@
+---
+title: Navigation.ino – Main Control and Pathfinding Logic
+layout: elk
+---
+
+flowchart TD
+    subgraph Init[indigo]
+        A["setup() – Initialize and profile system"]
+        A --> B["Parse mapLines → Width/Length"]
+        B --> C["Construct wall grid"]
+        C --> D["Find first open cell as Base"]
+        D --> E["Calculate lbsPerCell & battery threshold"]
+        E --> F["Print diagnostics & call findPath()"]
+    end
+
+    subgraph PathFinding[teal]
+        F --> G["findPath(): BFS → map reachable cells"]
+        G --> H["Pad reachable areas (avoid walls)"]
+        H --> I["Loop: while unsaltedPaddedCount > 0"]
+    end
+
+    subgraph Salting[violet]
+        I --> J{"Low salt/battery?"}
+        J -->|Yes| K["A_Star() → RTB (Return to Base)"]
+        K --> L["Recharge & Refill"]
+        L --> M["A_Star() → TRANSIT back to work area"]
+        J -->|No| N{"Find best salting direction"}
+        N -->|Found| O["Follow direction → markSalted()"]
+        N -->|None| P{"Line of Sight (LOS) check"}
+        P -->|LOS Found| Q["Salt line using LOS sweep"]
+        P -->|None| R["A_Star() → TRANSIT to new zone"]
+        O --> I
+        Q --> I
+        R --> I
+    end
+
+    subgraph Finish[orange]
+        I --> S["A_Star() → RTB (Final return)"]
+        S --> T["PrintDriveCommand summary & diagnostics"]
+        T --> U["loop() – idle wait"]
+    end
+
+    classDef indigo stroke:#818cf8,fill:#eef2ff
+    classDef teal stroke:#2dd4bf,fill:#f0fdfa
+    classDef violet stroke:#a78bfa,fill:#f5f3ff
+    classDef orange stroke:#fb923c,fill:#fff7ed
+
+    class A,B,C,D,E,F indigo
+    class G,H,I,J,K,L,M,N,O,P,Q,R teal
+    class S,T,U orange

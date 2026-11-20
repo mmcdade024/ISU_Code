@@ -1,0 +1,15 @@
+|division
+Z0 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+a => inst6.IN0
+a => inst.IN0
+c => inst6.IN1
+c => inst8.IN1
+Z1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+d => inst.IN1
+d => inst7.IN1
+b => inst8.IN0
+b => inst7.IN0
+Z2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Z3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+

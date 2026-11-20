@@ -1,0 +1,151 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+Z2 !s12c _opt
+R1
+!s12c _opt2
+R1
+R0
+R1
+R2
+R1
+!s11f vlog 2023.2 2023.04, Apr 11 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 dC:/questasim64_2023.2/examples
+T_opt
+!s110 1707874077
+V]KHn3?gBiTfYW_5;bQ8z60
+04 11 4 work multiplexer fast 0
+=1-b07b2527b5ca-65cc171c-246-640
+R1
+Z4 !s12b OEM100
+Z5 !s124 OEM100
+Z6 o-quiet -auto_acc_if_foreign -work work
+Z7 tCvgOpt 0
+n@_opt
+Z8 OL;O;2023.2;77
+R3
+T_opt1
+!s110 1707874578
+V3e]YhI1b:4DHbWA:I>PGF0
+04 9 4 work lab4step2 fast 0
+=1-b07b2527b5ca-65cc1911-388-3cfc
+R1
+R4
+R5
+R6
+R7
+n@_opt1
+R8
+T_opt2
+!s110 1707873997
+VbF4zIen]>Yb[@kgSL=1M12
+04 11 4 work powersaving fast 0
+=1-b07b2527b5ca-65cc16cd-1e-928
+R1
+R4
+R5
+R6
+R7
+n@_opt2
+R8
+R3
+vlab4step2
+2U:/CPRE281/Lab04/Lab4step2/lab4step2.v
+!s110 1707873269
+!i10b 1
+!s100 l3a<[VFm`?aA6c1Y`oZho3
+IVLJ4eo=U23W6<TVN7l6Jf1
+Z9 dU:/CPRE281/Lab04/Lab4step2
+w1707871551
+8U:/CPRE281/Lab04/Lab4step2/lab4step2.v
+FU:/CPRE281/Lab04/Lab4step2/lab4step2.v
+!i122 4
+L0 20 44
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OL;L;2023.2;77
+r1
+!s85 0
+31
+Z12 !s108 1707873269.000000
+!s107 U:/CPRE281/Lab04/Lab4step2/lab4step2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|U:/CPRE281/Lab04/Lab4step2/lab4step2.v|
+!i113 0
+Z13 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R7
+vmultiplexer
+2U:/CPRE281/Lab04/Lab4step2/multiplexer.v
+Z14 !s110 1707873270
+!i10b 1
+!s100 aVIn`;_8oUiE`ofm0Gg_?2
+I5;[mDNX4oZhAg_HCnnL5c3
+R9
+w1707872281
+8U:/CPRE281/Lab04/Lab4step2/multiplexer.v
+FU:/CPRE281/Lab04/Lab4step2/multiplexer.v
+!i122 5
+Z15 L0 25 18
+R10
+R11
+r1
+!s85 0
+31
+R12
+!s107 U:/CPRE281/Lab04/Lab4step2/multiplexer.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|U:/CPRE281/Lab04/Lab4step2/multiplexer.v|
+!i113 0
+R13
+R7
+vnormal
+2U:/CPRE281/Lab04/Lab4step2/normal.v
+R14
+!i10b 1
+!s100 XnB=om7Xm5=[[Ema89V[L0
+IWC?]3J_UVibGzT[QAZ^IN2
+R9
+w1707873022
+8U:/CPRE281/Lab04/Lab4step2/normal.v
+FU:/CPRE281/Lab04/Lab4step2/normal.v
+!i122 6
+R15
+R10
+R11
+r1
+!s85 0
+31
+Z16 !s108 1707873270.000000
+!s107 U:/CPRE281/Lab04/Lab4step2/normal.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|U:/CPRE281/Lab04/Lab4step2/normal.v|
+!i113 0
+R13
+R7
+vpowersaving
+2U:/CPRE281/Lab04/Lab4step2/powersaving.v
+R14
+!i10b 1
+!s100 h9X4DTX06mMZS;ge9VRLZ0
+IAZKKaVoicbMc>Y0GK3;Ro2
+R9
+w1707870974
+8U:/CPRE281/Lab04/Lab4step2/powersaving.v
+FU:/CPRE281/Lab04/Lab4step2/powersaving.v
+!i122 7
+R15
+R10
+R11
+r1
+!s85 0
+31
+R16
+!s107 U:/CPRE281/Lab04/Lab4step2/powersaving.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|U:/CPRE281/Lab04/Lab4step2/powersaving.v|
+!i113 0
+R13
+R7

@@ -1,0 +1,375 @@
+|4-bit-register
+out3 <= mux-4:inst124.out
+S1 => mux-4:inst124.S1
+S1 => mux-4:inst15243.S1
+S1 => mux-4:inst1434.S1
+S1 => mux-4:inst1367.S1
+S0 => mux-4:inst124.S0
+S0 => mux-4:inst15243.S0
+S0 => mux-4:inst1434.S0
+S0 => mux-4:inst1367.S0
+in3 => inst213.IN0
+in2 => inst1.IN0
+in1 => inst2.IN0
+ino => inst3.IN0
+Load => inst7.IN1
+Load => inst6.IN1
+Load => inst5.IN1
+Load => inst23456.IN1
+R_in3 => register:inst178.R_in
+Clock => register:inst178.Clock
+Clock => register:inst11441.Clock
+Clock => register:inst2352.Clock
+Clock => register:inst234523542.Clock
+R_in2 => register:inst11441.R_in
+R_in1 => register:inst2352.R_in
+R_in0 => register:inst234523542.R_in
+out2 <= mux-4:inst1367.out
+out1 <= mux-4:inst1434.out
+out0 <= mux-4:inst15243.out
+
+
+|4-bit-register|mux-4:inst124
+out <= mux:inst12.out
+0 => mux:inst.0
+S0 => mux:inst.switch
+S0 => mux:inst11.switch
+1 => mux:inst.1
+S1 => mux:inst12.switch
+2 => mux:inst11.0
+3 => mux:inst11.1
+
+
+|4-bit-register|mux-4:inst124|mux:inst12
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|mux-4:inst124|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|mux-4:inst124|mux:inst11
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst234523542
+out3 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst1.CLK
+Clock => inst4.CLK
+Clock => inst6.CLK
+Clock => inst7.CLK
+R_in => mux:inst.switch
+R_in => mux:inst3.switch
+R_in => mux:inst5.switch
+R_in => mux:inst8.switch
+in3 => mux:inst.1
+out2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+in2 => mux:inst3.1
+out1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+in1 => mux:inst5.1
+out0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+in0 => mux:inst8.1
+
+
+|4-bit-register|register:inst234523542|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst234523542|mux:inst3
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst234523542|mux:inst5
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst234523542|mux:inst8
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|mux-4:inst15243
+out <= mux:inst12.out
+0 => mux:inst.0
+S0 => mux:inst.switch
+S0 => mux:inst11.switch
+1 => mux:inst.1
+S1 => mux:inst12.switch
+2 => mux:inst11.0
+3 => mux:inst11.1
+
+
+|4-bit-register|mux-4:inst15243|mux:inst12
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|mux-4:inst15243|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|mux-4:inst15243|mux:inst11
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst2352
+out3 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst1.CLK
+Clock => inst4.CLK
+Clock => inst6.CLK
+Clock => inst7.CLK
+R_in => mux:inst.switch
+R_in => mux:inst3.switch
+R_in => mux:inst5.switch
+R_in => mux:inst8.switch
+in3 => mux:inst.1
+out2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+in2 => mux:inst3.1
+out1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+in1 => mux:inst5.1
+out0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+in0 => mux:inst8.1
+
+
+|4-bit-register|register:inst2352|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst2352|mux:inst3
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst2352|mux:inst5
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst2352|mux:inst8
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|mux-4:inst1434
+out <= mux:inst12.out
+0 => mux:inst.0
+S0 => mux:inst.switch
+S0 => mux:inst11.switch
+1 => mux:inst.1
+S1 => mux:inst12.switch
+2 => mux:inst11.0
+3 => mux:inst11.1
+
+
+|4-bit-register|mux-4:inst1434|mux:inst12
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|mux-4:inst1434|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|mux-4:inst1434|mux:inst11
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst11441
+out3 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst1.CLK
+Clock => inst4.CLK
+Clock => inst6.CLK
+Clock => inst7.CLK
+R_in => mux:inst.switch
+R_in => mux:inst3.switch
+R_in => mux:inst5.switch
+R_in => mux:inst8.switch
+in3 => mux:inst.1
+out2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+in2 => mux:inst3.1
+out1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+in1 => mux:inst5.1
+out0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+in0 => mux:inst8.1
+
+
+|4-bit-register|register:inst11441|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst11441|mux:inst3
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst11441|mux:inst5
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst11441|mux:inst8
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|mux-4:inst1367
+out <= mux:inst12.out
+0 => mux:inst.0
+S0 => mux:inst.switch
+S0 => mux:inst11.switch
+1 => mux:inst.1
+S1 => mux:inst12.switch
+2 => mux:inst11.0
+3 => mux:inst11.1
+
+
+|4-bit-register|mux-4:inst1367|mux:inst12
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|mux-4:inst1367|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|mux-4:inst1367|mux:inst11
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst178
+out3 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst1.CLK
+Clock => inst4.CLK
+Clock => inst6.CLK
+Clock => inst7.CLK
+R_in => mux:inst.switch
+R_in => mux:inst3.switch
+R_in => mux:inst5.switch
+R_in => mux:inst8.switch
+in3 => mux:inst.1
+out2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+in2 => mux:inst3.1
+out1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+in1 => mux:inst5.1
+out0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+in0 => mux:inst8.1
+
+
+|4-bit-register|register:inst178|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst178|mux:inst3
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst178|mux:inst5
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|4-bit-register|register:inst178|mux:inst8
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+

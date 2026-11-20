@@ -1,0 +1,22 @@
+/*
+ * scan.h
+ *
+ *  Created on: Dec 3, 2024
+ *      Author: mamcdade
+ */
+
+#ifndef SCAN_H_
+#define SCAN_H_
+
+void getIRData();
+void getCleanIRData();
+void cleanUp();
+void getObjs();
+void getSmallestObj();
+void getCleanIRDataV2();
+void sendIrData();
+void printIrData();
+char singleNumChar(int num);
+void numToChar(int num);
+
+#endif /* SCAN_H_ */

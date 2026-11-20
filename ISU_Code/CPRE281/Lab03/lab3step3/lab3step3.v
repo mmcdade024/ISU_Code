@@ -1,0 +1,18 @@
+module lab3step3(F,C,G,W,A);
+	input F,C,G,W;
+	output A;
+	
+	not(M,F);
+	not(B,C);
+	not(Q,G);
+	not(N,W);
+
+	
+	);
+	and(H,M,G,C);
+	and(X,F,Q,B);
+	and(K,F,Q,N);
+	
+	or(A,T,H,X,K);
+	
+endmodule

@@ -1,0 +1,14 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 10, 2024
+ *      Author: mamcdade
+ */
+
+#include <stdio.h>
+#include "Timer.h"
+#include "lcd.h"
+#include "cyBot_uart.h"
+#include "open_interface.h"
+
+

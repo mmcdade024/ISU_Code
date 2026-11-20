@@ -1,0 +1,53 @@
+# Compile of lab2step2.v was successful.
+vsim -gui work.lab2step2
+# vsim -gui work.lab2step2 
+# Start time: 19:56:51 on Jan 30,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.lab2step2(fast)
+add wave -position insertpoint sim:/lab2step2/*
+force -freeze sim:/lab2step2/C 1'h0 0
+force -freeze sim:/lab2step2/C 1'h0 0
+force -freeze sim:/lab2step2/G 1'h0 0
+force -freeze sim:/lab2step2/W 1'h0 0
+run 100
+force -freeze sim:/lab2step2/C 1'h0 0
+force -freeze sim:/lab2step2/G 1'h1 0
+
+force -freeze sim:/lab2step2/C 1'h0 0
+force -freeze sim:/lab2step2/G 1'h1 0
+force -freeze sim:/lab2step2/W 1'h0 0
+run 100
+force -freeze sim:/lab2step2/C 1'h0 0
+force -freeze sim:/lab2step2/G 1'h0 0
+force -freeze sim:/lab2step2/W 1'h0 0
+run 100
+force -freeze sim:/lab2step2/C 1'h0 0
+force -freeze sim:/lab2step2/G 1'h0 0
+force -freeze sim:/lab2step2/W 1'h1 0
+run 100
+force -freeze sim:/lab2step2/C 1'h0 0
+force -freeze sim:/lab2step2/G 1'h1 0
+force -freeze sim:/lab2step2/W 1'h0 0
+run 100
+force -freeze sim:/lab2step2/C 1'h0 0
+force -freeze sim:/lab2step2/G 1'h1 0
+force -freeze sim:/lab2step2/W 1'h1 0
+run 100
+force -freeze sim:/lab2step2/C 1'h1 0
+force -freeze sim:/lab2step2/G 1'h0 0
+force -freeze sim:/lab2step2/W 1'h0 0
+run 100
+force -freeze sim:/lab2step2/C 1'h1 0
+force -freeze sim:/lab2step2/G 1'h0 0
+force -freeze sim:/lab2step2/W 1'h1 0
+run 100
+force -freeze sim:/lab2step2/C 1'h1 0
+force -freeze sim:/lab2step2/G 1'h1 0
+force -freeze sim:/lab2step2/W 1'h0 0
+run 100
+force -freeze sim:/lab2step2/C 1'h1 0
+force -freeze sim:/lab2step2/G 1'h1 0
+force -freeze sim:/lab2step2/W 1'h1 0
+run 100
+# End time: 20:08:34 on Jan 30,2024, Elapsed time: 0:11:43
+# Errors: 0, Warnings: 5

@@ -1,0 +1,14 @@
+# Compile of lab10step2b.v was successful.
+vsim -gui work.lab10step2b
+# vsim -gui work.lab10step2b 
+# Start time: 20:53:20 on Apr 09,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.lab10step2b(fast)
+add wave -position insertpoint  \
+sim:/lab10step2b/CLRN \
+sim:/lab10step2b/Clock \
+sim:/lab10step2b/Enable \
+sim:/lab10step2b/Q
+do lab10counter.do
+# End time: 20:54:51 on Apr 09,2024, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 6

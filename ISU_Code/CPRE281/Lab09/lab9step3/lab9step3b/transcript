@@ -1,0 +1,13 @@
+vsim -gui work.lab9step3b
+# vsim -gui work.lab9step3b 
+# Start time: 18:15:01 on Apr 02,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.lab9step3b(fast)
+add wave -position insertpoint  \
+sim:/lab9step3b/CLK \
+sim:/lab9step3b/D \
+sim:/lab9step3b/Q \
+sim:/lab9step3b/QN
+do lab9step2and3.do
+# End time: 18:39:47 on Apr 02,2024, Elapsed time: 0:24:46
+# Errors: 0, Warnings: 1

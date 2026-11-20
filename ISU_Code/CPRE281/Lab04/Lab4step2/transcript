@@ -1,0 +1,113 @@
+# Compile of lab4step2.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of normal.v was successful.
+# Compile of powersaving.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work._opt
+# vsim -gui work._opt 
+# Start time: 19:14:42 on Feb 13,2024
+# ** Warning: (vsim-1963) Explicit invocation on automatically named optimized design "_opt" will not cause it to be locked.
+# Loading work.lab4step2(fast)
+# Loading work.multiplexer(fast)
+# Loading work.normal(fast)
+# Loading work.powersaving(fast)
+force M 0 0, 1 400 -repeat 800
+force T 0 0, 1 200 -repeat 400
+force H 0 0, 1 100 -repeat 200
+force P 0 0, 1 50 -repeat 100
+run 800
+add wave -position insertpoint  \
+sim:/lab4step2/H \
+sim:/lab4step2/T \
+sim:/lab4step2/P \
+sim:/lab4step2/M \
+sim:/lab4step2/AC
+force M 0 0, 1 400 -repeat 800
+force T 0 0, 1 200 -repeat 400
+force H 0 0, 1 100 -repeat 200
+force P 0 0, 1 50 -repeat 100
+run 800
+# Load canceled
+vsim -gui work.normal
+# End time: 19:21:39 on Feb 13,2024, Elapsed time: 0:06:57
+# Errors: 0, Warnings: 6
+# vsim -gui work.normal 
+# Start time: 19:21:39 on Feb 13,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.normal(fast)
+add wave -position insertpoint  \
+sim:/normal/P \
+sim:/normal/T \
+sim:/normal/H \
+sim:/normal/E
+force P 0 0, 1 200 -repeat 400
+force T 0 0, 1 100 -repeat 200
+force H 0 0, 1 50 -repeat 100
+run 600
+vsim -gui work.powersaving
+# End time: 19:26:36 on Feb 13,2024, Elapsed time: 0:04:57
+# Errors: 0, Warnings: 1
+# vsim -gui work.powersaving 
+# Start time: 19:26:36 on Feb 13,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.powersaving(fast)
+add wave -position insertpoint  \
+sim:/powersaving/P \
+sim:/powersaving/T \
+sim:/powersaving/H \
+sim:/powersaving/F
+force P 0 0, 1 200 -repeat 400
+force T 0 0, 1 100 -repeat 200
+force H 0 0, 1 50 -repeat 100
+run 600
+vsim -gui work.multiplexer
+# End time: 19:27:56 on Feb 13,2024, Elapsed time: 0:01:20
+# Errors: 0, Warnings: 1
+# vsim -gui work.multiplexer 
+# Start time: 19:27:56 on Feb 13,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.multiplexer(fast)
+add wave -position insertpoint  \
+sim:/multiplexer/E \
+sim:/multiplexer/F \
+sim:/multiplexer/M \
+sim:/multiplexer/AC
+force E 0 0, 1 200 -repeat 400
+force F 0 0, 1 100 -repeat 200
+force M 0 0, 1 50 -repeat 100
+run 600
+# Causality operation skipped due to absence of debug database file
+vsim -gui work._opt
+# End time: 19:35:34 on Feb 13,2024, Elapsed time: 0:07:38
+# Errors: 0, Warnings: 1
+# vsim -gui work._opt 
+# Start time: 19:35:34 on Feb 13,2024
+# ** Warning: (vsim-1963) Explicit invocation on automatically named optimized design "_opt" will not cause it to be locked.
+# Loading work.multiplexer(fast)
+vsim -gui work._opt2
+# End time: 19:35:54 on Feb 13,2024, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 2
+# vsim -gui work._opt2 
+# Start time: 19:35:54 on Feb 13,2024
+# ** Warning: (vsim-1963) Explicit invocation on automatically named optimized design "_opt2" will not cause it to be locked.
+# Loading work.powersaving(fast)
+vsim -gui work.lab4step2
+# End time: 19:36:17 on Feb 13,2024, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 2
+# vsim -gui work.lab4step2 
+# Start time: 19:36:17 on Feb 13,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.lab4step2(fast)
+add wave -position insertpoint  \
+sim:/lab4step2/H \
+sim:/lab4step2/T \
+sim:/lab4step2/P \
+sim:/lab4step2/M \
+sim:/lab4step2/AC
+force M 0 0, 1 400 -repeat 800
+force T 0 0, 1 200 -repeat 400
+force H 0 0, 1 100 -repeat 200
+force P 0 0, 1 50 -repeat 100
+run 800
+# End time: 19:42:21 on Feb 13,2024, Elapsed time: 0:06:04
+# Errors: 0, Warnings: 1

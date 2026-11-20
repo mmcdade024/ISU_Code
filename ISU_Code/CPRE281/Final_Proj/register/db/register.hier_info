@@ -1,0 +1,35 @@
+|mux-4
+out <= mux:inst12.out
+0 => mux:inst.0
+S0 => mux:inst.switch
+S0 => mux:inst11.switch
+1 => mux:inst.1
+S1 => mux:inst12.switch
+2 => mux:inst11.0
+3 => mux:inst11.1
+
+
+|mux-4|mux:inst12
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|mux-4|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|mux-4|mux:inst11
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+

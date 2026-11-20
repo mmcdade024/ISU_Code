@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Apr 30 21:23:04 2024
+Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Standard Edition
+Revision Name : calculator_decoder
+Top-level Entity Name : calculator_decoder
+Family : Cyclone IV E
+Total logic elements : 88
+    Total combinational functions : 76
+    Dedicated logic registers : 42
+Total registers : 42
+Total pins : 45
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

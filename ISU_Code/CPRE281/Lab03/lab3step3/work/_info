@@ -1,0 +1,88 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11f vlog 2023.2 2023.04, Apr 11 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/questasim64_2023.2/examples
+T_opt
+!s110 1707772274
+VBd0a5aWZd@=zi]VhPjdbD1
+04 9 4 work lab3step4 fast 0
+=1-7486e228a190-65ca8971-3b8-2e7c
+R0
+Z2 !s12b OEM100
+Z3 !s124 OEM100
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2023.2;77
+R1
+T_opt1
+!s110 1707775280
+VnCXhTTehD3hV?lL`2^2M50
+04 9 4 work lab3step3 fast 0
+=1-b07b252790a5-65ca952f-2c5-10f0
+R0
+R2
+R3
+R4
+R5
+n@_opt1
+R6
+vlab3step3
+2U:/CPRE281/Lab03/lab3step3/lab3step3.v
+!s110 1707775265
+!i10b 1
+!s100 AI:odTRB?Mmkii>Z6VB9l1
+I:zKAZSN;J2G^cRJkhjNbn0
+Z7 dU:/CPRE281/Lab03/lab3step3
+w1707774933
+8U:/CPRE281/Lab03/lab3step3/lab3step3.v
+FU:/CPRE281/Lab03/lab3step3/lab3step3.v
+!i122 1
+Z8 L0 1 17
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2023.2;77
+r1
+!s85 0
+31
+!s108 1707775265.000000
+!s107 U:/CPRE281/Lab03/lab3step3/lab3step3.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|U:/CPRE281/Lab03/lab3step3/lab3step3.v|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+vlab3step4
+2U:/CPRE281/Lab03/lab3step3/lab3step4.sv
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1707772259
+!i10b 1
+!s100 SNzZ471@MlRj1;0_^jz`C2
+IOcbAF<NB@zMPYRB=YYYPd0
+S1
+R7
+w1707770995
+8U:/CPRE281/Lab03/lab3step3/lab3step4.sv
+FU:/CPRE281/Lab03/lab3step3/lab3step4.sv
+!i122 0
+R8
+R9
+R10
+r1
+!s85 0
+31
+!s108 1707772259.000000
+!s107 U:/CPRE281/Lab03/lab3step3/lab3step4.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|U:/CPRE281/Lab03/lab3step3/lab3step4.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5

@@ -1,0 +1,710 @@
+|calculator_decoder
+Cout <= adder_sub:inst4.Cout
+X3 => adder_sub:inst4.X3
+X3 => seven_seg_decoder:inst25.X_3
+Y3 => adder_sub:inst4.Y3
+Y3 => seven_seg_decoder:inst25.X_2
+X2 => adder_sub:inst4.X2
+X2 => seven_seg_decoder:inst25.X_1
+Y2 => adder_sub:inst4.Y2
+Y2 => seven_seg_decoder:inst25.X_0
+X1 => adder_sub:inst4.X1
+X1 => seven_seg_decoder:inst26.X_3
+Y1 => adder_sub:inst4.Y1
+Y1 => seven_seg_decoder:inst26.X_2
+X0 => adder_sub:inst4.X0
+X0 => seven_seg_decoder:inst26.X_1
+Y0 => adder_sub:inst4.Y0
+Y0 => seven_seg_decoder:inst26.X_0
+Clock => clock_generator:inst.CLK_IN
+w => inst3.IN0
+w => inst17.IN0
+A-IN1 <= seven_seg_decoder:inst26.A
+B-IN1 <= seven_seg_decoder:inst26.B
+C-IN1 <= seven_seg_decoder:inst26.C
+D-IN1 <= seven_seg_decoder:inst26.D
+E-IN1 <= seven_seg_decoder:inst26.E
+F-IN1 <= seven_seg_decoder:inst26.F
+G-IN1 <= seven_seg_decoder:inst26.G
+A-IN0 <= seven_seg_decoder:inst25.A
+B-IN0 <= seven_seg_decoder:inst25.B
+C-IN0 <= seven_seg_decoder:inst25.C
+D-IN0 <= seven_seg_decoder:inst25.D
+E-IN0 <= seven_seg_decoder:inst25.E
+F-IN0 <= seven_seg_decoder:inst25.F
+G-IN0 <= seven_seg_decoder:inst25.G
+A-OUT0 <= seven_seg_decoder:inst27.A
+B-OUT0 <= seven_seg_decoder:inst27.B
+C-OUT0 <= seven_seg_decoder:inst27.C
+D-OUT0 <= seven_seg_decoder:inst27.D
+E-OUT0 <= seven_seg_decoder:inst27.E
+F-OUT0 <= seven_seg_decoder:inst27.F
+G-OUT0 <= seven_seg_decoder:inst27.G
+Overflow <= adder_sub:inst4.Ov
+out0 <= 4-bit-register:inst1.out0
+Load => 4-bit-register:inst1.Load
+S1 => 4-bit-register:inst1.S1
+S0 => 4-bit-register:inst1.S0
+R_in1 => 4-bit-register:inst1.R_in1
+R_in0 => 4-bit-register:inst1.R_in0
+R_in2 => 4-bit-register:inst1.R_in2
+R_in3 => 4-bit-register:inst1.R_in3
+Clock1 => 4-bit-register:inst1.Clock
+out1 <= 4-bit-register:inst1.out1
+out2 <= 4-bit-register:inst1.out2
+out3 <= 4-bit-register:inst1.out3
+
+
+|calculator_decoder|adder_sub:inst4
+Cout <= adder_4bit:inst.Cout
+X3 => adder_4bit:inst.X3
+Cin => inst0.IN0
+Cin => inst2.IN0
+Cin => inst3.IN0
+Cin => inst4.IN0
+Cin => adder_4bit:inst.Cin
+Y3 => inst0.IN1
+X2 => adder_4bit:inst.X2
+Y2 => inst2.IN1
+X1 => adder_4bit:inst.X1
+Y1 => inst3.IN1
+X0 => adder_4bit:inst.X0
+Y0 => inst4.IN1
+S3 <= adder_4bit:inst.S3
+S2 <= adder_4bit:inst.S2
+S1 <= adder_4bit:inst.S1
+S0 <= adder_4bit:inst.S0
+Ov <= adder_4bit:inst.Ov
+
+
+|calculator_decoder|adder_sub:inst4|adder_4bit:inst
+S0 <= FA:inst.S
+X0 => FA:inst.X
+Y0 => FA:inst.Y
+Cin => FA:inst.Cin
+S1 <= FA:inst6.S
+X1 => FA:inst6.X
+Y1 => FA:inst6.Y
+S2 <= FA:inst7.S
+X2 => FA:inst7.X
+Y2 => FA:inst7.Y
+S3 <= FA:inst8.S
+X3 => FA:inst8.X
+Y3 => FA:inst8.Y
+Cout <= FA:inst8.Cout
+Ov <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator_decoder|adder_sub:inst4|adder_4bit:inst|FA:inst
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator_decoder|adder_sub:inst4|adder_4bit:inst|FA:inst6
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator_decoder|adder_sub:inst4|adder_4bit:inst|FA:inst7
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator_decoder|adder_sub:inst4|adder_4bit:inst|FA:inst8
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator_decoder|clock_generator:inst
+CLK_OUT <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+CLK_IN => clock_divider_1024:inst.CLK_IN
+
+
+|calculator_decoder|clock_generator:inst|clock_divider_1024:inst8
+CLK_OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLK_IN => inst1.CLK
+CLK_IN => inst2.CLK
+CLK_IN => inst3.CLK
+CLK_IN => inst4.CLK
+CLK_IN => inst5.CLK
+CLK_IN => inst6.CLK
+CLK_IN => inst7.CLK
+CLK_IN => inst8.CLK
+CLK_IN => inst9.CLK
+CLK_IN => inst10.CLK
+
+
+|calculator_decoder|clock_generator:inst|clock_divider_1024:inst
+CLK_OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLK_IN => inst1.CLK
+CLK_IN => inst2.CLK
+CLK_IN => inst3.CLK
+CLK_IN => inst4.CLK
+CLK_IN => inst5.CLK
+CLK_IN => inst6.CLK
+CLK_IN => inst7.CLK
+CLK_IN => inst8.CLK
+CLK_IN => inst9.CLK
+CLK_IN => inst10.CLK
+
+
+|calculator_decoder|seven_seg_decoder:inst26
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+X_3 => A.IN0
+X_3 => A.IN0
+X_3 => B.IN0
+X_3 => A.IN0
+X_3 => A.IN0
+X_3 => E.IN0
+X_3 => F.IN0
+X_2 => A.IN1
+X_2 => A.IN1
+X_2 => B.IN0
+X_2 => A.IN1
+X_2 => A.IN1
+X_2 => E.IN0
+X_1 => A.IN1
+X_1 => B.IN1
+X_1 => B.IN1
+X_1 => C.IN1
+X_1 => C.IN1
+X_1 => F.IN1
+X_1 => G.IN1
+X_1 => A.IN1
+X_1 => A.IN1
+X_1 => A.IN1
+X_1 => E.IN1
+X_0 => A.IN1
+X_0 => A.IN1
+X_0 => A.IN1
+X_0 => B.IN1
+X_0 => B.IN1
+X_0 => D.IN1
+X_0 => E.IN1
+X_0 => E.IN1
+X_0 => F.IN1
+X_0 => F.IN1
+X_0 => G.IN1
+X_0 => A.IN1
+X_0 => B.IN1
+X_0 => B.IN1
+X_0 => C.IN1
+X_0 => D.IN1
+X_0 => G.IN1
+
+
+|calculator_decoder|seven_seg_decoder:inst25
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+X_3 => A.IN0
+X_3 => A.IN0
+X_3 => B.IN0
+X_3 => A.IN0
+X_3 => A.IN0
+X_3 => E.IN0
+X_3 => F.IN0
+X_2 => A.IN1
+X_2 => A.IN1
+X_2 => B.IN0
+X_2 => A.IN1
+X_2 => A.IN1
+X_2 => E.IN0
+X_1 => A.IN1
+X_1 => B.IN1
+X_1 => B.IN1
+X_1 => C.IN1
+X_1 => C.IN1
+X_1 => F.IN1
+X_1 => G.IN1
+X_1 => A.IN1
+X_1 => A.IN1
+X_1 => A.IN1
+X_1 => E.IN1
+X_0 => A.IN1
+X_0 => A.IN1
+X_0 => A.IN1
+X_0 => B.IN1
+X_0 => B.IN1
+X_0 => D.IN1
+X_0 => E.IN1
+X_0 => E.IN1
+X_0 => F.IN1
+X_0 => F.IN1
+X_0 => G.IN1
+X_0 => A.IN1
+X_0 => B.IN1
+X_0 => B.IN1
+X_0 => C.IN1
+X_0 => D.IN1
+X_0 => G.IN1
+
+
+|calculator_decoder|seven_seg_decoder:inst27
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+X_3 => A.IN0
+X_3 => A.IN0
+X_3 => B.IN0
+X_3 => A.IN0
+X_3 => A.IN0
+X_3 => E.IN0
+X_3 => F.IN0
+X_2 => A.IN1
+X_2 => A.IN1
+X_2 => B.IN0
+X_2 => A.IN1
+X_2 => A.IN1
+X_2 => E.IN0
+X_1 => A.IN1
+X_1 => B.IN1
+X_1 => B.IN1
+X_1 => C.IN1
+X_1 => C.IN1
+X_1 => F.IN1
+X_1 => G.IN1
+X_1 => A.IN1
+X_1 => A.IN1
+X_1 => A.IN1
+X_1 => E.IN1
+X_0 => A.IN1
+X_0 => A.IN1
+X_0 => A.IN1
+X_0 => B.IN1
+X_0 => B.IN1
+X_0 => D.IN1
+X_0 => E.IN1
+X_0 => E.IN1
+X_0 => F.IN1
+X_0 => F.IN1
+X_0 => G.IN1
+X_0 => A.IN1
+X_0 => B.IN1
+X_0 => B.IN1
+X_0 => C.IN1
+X_0 => D.IN1
+X_0 => G.IN1
+
+
+|calculator_decoder|4-bit-register:inst1
+out3 <= mux-4:inst124.out
+S1 => mux-4:inst124.S1
+S1 => mux-4:inst15243.S1
+S1 => mux-4:inst1434.S1
+S1 => mux-4:inst1367.S1
+S0 => mux-4:inst124.S0
+S0 => mux-4:inst15243.S0
+S0 => mux-4:inst1434.S0
+S0 => mux-4:inst1367.S0
+in3 => inst213.IN0
+in2 => inst1.IN0
+in1 => inst2.IN0
+ino => inst3.IN0
+Load => inst7.IN1
+Load => inst6.IN1
+Load => inst5.IN1
+Load => inst23456.IN1
+R_in3 => register:inst178.R_in
+Clock => register:inst178.Clock
+Clock => register:inst11441.Clock
+Clock => register:inst2352.Clock
+Clock => register:inst234523542.Clock
+R_in2 => register:inst11441.R_in
+R_in1 => register:inst2352.R_in
+R_in0 => register:inst234523542.R_in
+out2 <= mux-4:inst1367.out
+out1 <= mux-4:inst1434.out
+out0 <= mux-4:inst15243.out
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst124
+out <= mux:inst12.out
+0 => mux:inst.0
+S0 => mux:inst.switch
+S0 => mux:inst11.switch
+1 => mux:inst.1
+S1 => mux:inst12.switch
+2 => mux:inst11.0
+3 => mux:inst11.1
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst124|mux:inst12
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst124|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst124|mux:inst11
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst234523542
+out3 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst1.CLK
+Clock => inst4.CLK
+Clock => inst6.CLK
+Clock => inst7.CLK
+R_in => mux:inst.switch
+R_in => mux:inst3.switch
+R_in => mux:inst5.switch
+R_in => mux:inst8.switch
+in3 => mux:inst.1
+out2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+in2 => mux:inst3.1
+out1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+in1 => mux:inst5.1
+out0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+in0 => mux:inst8.1
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst234523542|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst234523542|mux:inst3
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst234523542|mux:inst5
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst234523542|mux:inst8
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst15243
+out <= mux:inst12.out
+0 => mux:inst.0
+S0 => mux:inst.switch
+S0 => mux:inst11.switch
+1 => mux:inst.1
+S1 => mux:inst12.switch
+2 => mux:inst11.0
+3 => mux:inst11.1
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst15243|mux:inst12
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst15243|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst15243|mux:inst11
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst2352
+out3 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst1.CLK
+Clock => inst4.CLK
+Clock => inst6.CLK
+Clock => inst7.CLK
+R_in => mux:inst.switch
+R_in => mux:inst3.switch
+R_in => mux:inst5.switch
+R_in => mux:inst8.switch
+in3 => mux:inst.1
+out2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+in2 => mux:inst3.1
+out1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+in1 => mux:inst5.1
+out0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+in0 => mux:inst8.1
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst2352|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst2352|mux:inst3
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst2352|mux:inst5
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst2352|mux:inst8
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst1434
+out <= mux:inst12.out
+0 => mux:inst.0
+S0 => mux:inst.switch
+S0 => mux:inst11.switch
+1 => mux:inst.1
+S1 => mux:inst12.switch
+2 => mux:inst11.0
+3 => mux:inst11.1
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst1434|mux:inst12
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst1434|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst1434|mux:inst11
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst11441
+out3 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst1.CLK
+Clock => inst4.CLK
+Clock => inst6.CLK
+Clock => inst7.CLK
+R_in => mux:inst.switch
+R_in => mux:inst3.switch
+R_in => mux:inst5.switch
+R_in => mux:inst8.switch
+in3 => mux:inst.1
+out2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+in2 => mux:inst3.1
+out1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+in1 => mux:inst5.1
+out0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+in0 => mux:inst8.1
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst11441|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst11441|mux:inst3
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst11441|mux:inst5
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst11441|mux:inst8
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst1367
+out <= mux:inst12.out
+0 => mux:inst.0
+S0 => mux:inst.switch
+S0 => mux:inst11.switch
+1 => mux:inst.1
+S1 => mux:inst12.switch
+2 => mux:inst11.0
+3 => mux:inst11.1
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst1367|mux:inst12
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst1367|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|mux-4:inst1367|mux:inst11
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst178
+out3 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst1.CLK
+Clock => inst4.CLK
+Clock => inst6.CLK
+Clock => inst7.CLK
+R_in => mux:inst.switch
+R_in => mux:inst3.switch
+R_in => mux:inst5.switch
+R_in => mux:inst8.switch
+in3 => mux:inst.1
+out2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+in2 => mux:inst3.1
+out1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+in1 => mux:inst5.1
+out0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+in0 => mux:inst8.1
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst178|mux:inst
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst178|mux:inst3
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst178|mux:inst5
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
+|calculator_decoder|4-bit-register:inst1|register:inst178|mux:inst8
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+switch => inst4.IN0
+switch => inst5.IN0
+1 => inst4.IN1
+0 => inst.IN0
+
+
